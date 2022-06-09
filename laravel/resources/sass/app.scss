@@ -1,35 +1,40 @@
-
 //
 @use "bootstrap";
-@import "~@fortawesome/fontawesome-free/scss/brands";
-@import "~@fortawesome/fontawesome-free/scss/regular";
-@import "~@fortawesome/fontawesome-free/scss/solid";
-@import "~@fortawesome/fontawesome-free/scss/fontawesome";
 
-$primaryColor: rgba(2, 130, 249, 1);
-$bgMain: rgba(28, 28, 28, 1);
-$bgFooter: rgba(48, 48, 48, 1);
-$textFooter: rgba(121, 121, 121, 1);
+
+$blue: rgba(2, 130, 249, 1);
+$dark_bg: rgba(28, 28, 28, 1);
+$footer_bg: rgba(48, 48, 48, 1);
+$light: rgba(121, 121, 121, 1);
 $white: white;
 $black: #000000;
+
+/* Common Rules */
+
+img {
+    max-width: 100%;
+    max-height: 100%;
+}
 
 /* utlity */
 .btn-primary {
     padding: 0.75rem 5rem;
     color: $white;
-    background-color: $primaryColor;
+    background-color: $blue;
     font-weight: 700;
 }
 
 /* body */
 header {
     .top {
-        background-color: $primaryColor;
+        background-color: $blue;
         color: $white;
         text-align: right;
     }
+
     .bottom {
         padding: 1rem;
+
         ul {
             list-style: none;
             display: flex;
@@ -38,8 +43,10 @@ header {
             margin-bottom: 0;
             padding-left: 0;
             height: 100%;
+
             li {
                 padding: 0 1rem;
+
                 a {
                     text-decoration: none;
                     text-transform: uppercase;
@@ -47,21 +54,25 @@ header {
                     font-weight: 400;
                     padding: 2.375rem 0;
                     color: $black;
+
                     i {
                         margin-left: 0.5rem;
-                        color: $primaryColor;
+                        color: $blue;
                     }
                 }
+
                 &:hover a {
-                    color: $primaryColor;
-                    box-shadow: 0px 8px $primaryColor;
+                    color: $blue;
+                    box-shadow: 0px 8px $blue;
                 }
             }
         }
+
         .search {
             width: 80%;
-            border-bottom: 2px solid $primaryColor;
-            margin: 2rem 0;
+            border-bottom: 2px solid $blue;
+            margin: 1.5rem 0;
+
             input {
                 text-align: right;
                 border: none;
@@ -69,6 +80,7 @@ header {
         }
     }
 }
+
 main {
     .hero_image {
         height: 400px;
@@ -76,20 +88,30 @@ main {
         background-size: cover;
         background-position: top;
     }
-    .comics {
-        background-color: $bgMain;
+
+    .comics,
+    .characters,
+    .homepage {
+        background-color: $dark_bg;
+
         .container {
             position: relative;
+
             .title {
                 position: absolute;
                 top: 0;
                 left: 0;
                 transform: translate(0, -50%);
                 text-transform: uppercase;
-                background-color: $primaryColor;
+                background-color: $blue;
                 color: $white;
                 padding: 0.5rem 1.5rem;
+
+                h2 {
+                    margin-bottom: 0;
+                }
             }
+
             .comic {
                 .img {
                     img {
@@ -99,19 +121,109 @@ main {
                         object-position: top;
                     }
                 }
+
                 .text {
                     color: $white;
                     margin-top: 0.5rem;
                     text-transform: uppercase;
                 }
             }
+
             .load_more {
                 text-align: center;
                 margin-top: 3rem;
+
                 a {
                     text-decoration: none;
                     text-transform: uppercase;
                     color: $white;
+                }
+            }
+        }
+    }
+
+}
+
+footer {
+    .top {
+        background-image: url("../img/footer-bg.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+
+        h5 {
+            margin-bottom: 1rem;
+            color: $white;
+        }
+
+        ul {
+            list-style: none;
+            margin-bottom: 1rem;
+            padding-left: 0;
+
+            li {
+                line-height: 1.25rem;
+            }
+        }
+
+        small {
+            font-size: 13px;
+            color: $light;
+
+            a {
+                text-decoration: none;
+                color: $blue;
+            }
+        }
+
+        .cookies {
+            line-height: 15px;
+        }
+    }
+
+    .bg {
+        background-image: url("../img/dc-logo-bg.png");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        margin-left: auto;
+        height: 100%;
+    }
+
+    .bottom {
+        background-color: $footer_bg;
+        padding: 1.5rem 0;
+
+        .sign_up {
+            button {
+                background-color: transparent;
+                border: 1px solid $blue;
+                padding: 1rem;
+                text-transform: uppercase;
+                color: $white;
+                font-weight: 700;
+            }
+        }
+
+        .follow {
+            display: flex;
+            align-items: center;
+            padding: 0.5rem;
+            justify-content: flex-end;
+
+            h5 {
+                color: $blue;
+                margin-right: 1.5rem;
+                margin-bottom: 0;
+                text-transform: uppercase;
+            }
+
+            .icon {
+                img {
+                    margin-right: 1rem;
+                }
+
+                & img:last-child {
+                    margin-right: 0;
                 }
             }
         }
