@@ -1,1 +1,119 @@
+
 //
+@use "bootstrap";
+@import "~@fortawesome/fontawesome-free/scss/brands";
+@import "~@fortawesome/fontawesome-free/scss/regular";
+@import "~@fortawesome/fontawesome-free/scss/solid";
+@import "~@fortawesome/fontawesome-free/scss/fontawesome";
+
+$primaryColor: rgba(2, 130, 249, 1);
+$bgMain: rgba(28, 28, 28, 1);
+$bgFooter: rgba(48, 48, 48, 1);
+$textFooter: rgba(121, 121, 121, 1);
+$white: white;
+$black: #000000;
+
+/* utlity */
+.btn-primary {
+    padding: 0.75rem 5rem;
+    color: $white;
+    background-color: $primaryColor;
+    font-weight: 700;
+}
+
+/* body */
+header {
+    .top {
+        background-color: $primaryColor;
+        color: $white;
+        text-align: right;
+    }
+    .bottom {
+        padding: 1rem;
+        ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 0;
+            padding-left: 0;
+            height: 100%;
+            li {
+                padding: 0 1rem;
+                a {
+                    text-decoration: none;
+                    text-transform: uppercase;
+                    font-size: 14px;
+                    font-weight: 400;
+                    padding: 2.375rem 0;
+                    color: $black;
+                    i {
+                        margin-left: 0.5rem;
+                        color: $primaryColor;
+                    }
+                }
+                &:hover a {
+                    color: $primaryColor;
+                    box-shadow: 0px 8px $primaryColor;
+                }
+            }
+        }
+        .search {
+            width: 80%;
+            border-bottom: 2px solid $primaryColor;
+            margin: 2rem 0;
+            input {
+                text-align: right;
+                border: none;
+            }
+        }
+    }
+}
+main {
+    .hero_image {
+        height: 400px;
+        background-image: url("../img/jumbotron.jpg");
+        background-size: cover;
+        background-position: top;
+    }
+    .comics {
+        background-color: $bgMain;
+        .container {
+            position: relative;
+            .title {
+                position: absolute;
+                top: 0;
+                left: 0;
+                transform: translate(0, -50%);
+                text-transform: uppercase;
+                background-color: $primaryColor;
+                color: $white;
+                padding: 0.5rem 1.5rem;
+            }
+            .comic {
+                .img {
+                    img {
+                        width: 100%;
+                        aspect-ratio: 1 / 1;
+                        object-fit: cover;
+                        object-position: top;
+                    }
+                }
+                .text {
+                    color: $white;
+                    margin-top: 0.5rem;
+                    text-transform: uppercase;
+                }
+            }
+            .load_more {
+                text-align: center;
+                margin-top: 3rem;
+                a {
+                    text-decoration: none;
+                    text-transform: uppercase;
+                    color: $white;
+                }
+            }
+        }
+    }
+}
