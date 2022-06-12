@@ -212,5 +212,47 @@ return [
                 "Joëlle Jones"
             ],
         ],
+    ],
+    'characters' => [
+        [
+            'name' => 'Batman',
+            'description' => 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto repellat libero modi tenetur delectus! Numquam nesciunt enim fugiat dolorum animi modi mollitia quos delectus esse?',
+            'image' => 'https://media-assets.wired.it/photos/615d99fd9c11e61f3ea824d0/3:4/w_540,h_720,c_limit/wired_placeholder_dummy.png'
+        ],
+        [
+            'name' => 'Robin',
+            'description' => 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto repellat libero modi tenetur delectus! Numquam nesciunt enim fugiat dolorum animi modi mollitia quos delectus esse?',
+            'image' => 'https://static1.funidelia.com/474165-f6_big2/costume-robin-teen-titans.jpg'
+        ],
+        [
+            'name' => 'WonderWoman',
+            'description' => 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto repellat libero modi tenetur delectus! Numquam nesciunt enim fugiat dolorum animi modi mollitia quos delectus esse?',
+            'image' => 'https://compass-media.vogue.it/photos/5dee254c93ece30008ee4654/2:3/w_2560%2Cc_limit/rev-1-A9_08309-Editr_High_Res_JPEG.jpeg'
+        ],
+        [
+            'name' => 'Joker',
+            'description' => 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto repellat libero modi tenetur delectus! Numquam nesciunt enim fugiat dolorum animi modi mollitia quos delectus esse?',
+            'image' => 'https://upload.wikimedia.org/wikipedia/commons/e/e8/The_Joker_at_Wax_Museum_Plus.jpg'
+        ],
+        [
+            'name' => 'Superman',
+            'description' => 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto repellat libero modi tenetur delectus! Numquam nesciunt enim fugiat dolorum animi modi mollitia quos delectus esse?',
+            'image' => 'https://movieplayer.net-cdn.it/t/images/2021/11/10/cavill-superman_jpg_1200x0_crop_q85.jpg'
+        ],
+        [
+            'name' => 'Aquaman',
+            'description' => 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto repellat libero modi tenetur delectus! Numquam nesciunt enim fugiat dolorum animi modi mollitia quos delectus esse?',
+            'image' => 'https://mr.comingsoon.it/imgdb/locandine/big/53659.jpg'
+        ],
+        [
+            'name' => 'Catwoman',
+            'description' => 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto repellat libero modi tenetur delectus! Numquam nesciunt enim fugiat dolorum animi modi mollitia quos delectus esse?',
+            'image' => 'https://i0.wp.com/www.comicsuniverse.it/wp-content/uploads/2021/11/catwoman-2000.jpg?fit=1402%2C875&ssl=1'
+        ],
+        [
+            'name' => 'Pinguino',
+            'description' => 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto repellat libero modi tenetur delectus! Numquam nesciunt enim fugiat dolorum animi modi mollitia quos delectus esse?',
+            'image' => 'http://youpopcorn.net/wp-content/uploads/2016/01/242.jpg'
+        ],
     ]
 ];

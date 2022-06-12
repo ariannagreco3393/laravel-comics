@@ -1,6 +1,6 @@
-@extends('layouts.app')
+@extends('layout.app')
 @section('custom-css')
-<link rel="stylesheet" href="{{asset('css/comics_show.css')}}">
+<link rel="stylesheet" href="{{asset('css/app.css')}}">
 @endsection
 @section('content')
 <section class="single_comic">

@@ -8,6 +8,14 @@ $footer_bg: rgba(48, 48, 48, 1);
 $light: rgba(121, 121, 121, 1);
 $white: white;
 $black: #000000;
+$success: #55ba59;
+$text-comic: #003f5e;
+$text-secondary-comic: #00a9d9;
+$text-parag: #555555;
+$success-light: #b4f27c;
+$bg-details: #f6f6f6;
+$border-details: #e3e3e3;
+$text-slider: #9F9F9F;
 
 /* Common Rules */
 
@@ -226,6 +234,145 @@ footer {
                     margin-right: 0;
                 }
             }
+        }
+    }
+}
+
+
+
+/* comics single page */
+
+.single_comic {
+    .blue_line {
+        height: 55px;
+        background-color: $blue;
+    }
+
+    .container {
+      
+        .card_comic {
+
+            .img_comic {
+                position: relative;
+                border: 2px solid $white;
+
+                .text_img {
+                    font-size: 12;
+                    font-weight: 500;
+
+                    .top {
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        background-color: $text-secondary-comic;
+                    }
+
+                    .bottom {
+                        width: 100%;
+                        text-align: center;
+                        background-color: $text-secondary-comic;
+                        position: absolute;
+                        bottom: 0;
+                        left: 0;
+                    }
+                }
+            }
+        }
+
+        .text_comic {
+            h2 {
+                color: $text-comic;
+            }
+
+            span {
+                color: $success-light;
+            }
+
+            .price {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                padding: 0.75rem 1.5rem;
+                background-color: $success;
+                border-bottom: 1px solid $black;
+                border-right: 1px solid $black;
+
+                p {
+                    color: $white;
+                    margin-bottom: 0;
+                }
+            }
+
+            .check {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                padding: 0.75rem 0;
+                background-color: $success;
+                border-bottom: 1px solid $black;
+
+                p {
+                    color: $white;
+                    margin-bottom: 0;
+                }
+            }
+        }
+    }
+}
+
+.details_comic {
+    min-height: 280px;
+    background-color: $bg-details;
+    border-top: 1px solid $border-details;
+
+    h5 {
+        color: $text-comic;
+    }
+
+    .detail {
+        border-top: 1px solid $border-details;
+        padding: 0.5rem 0;
+
+        &:last-child {
+            border-bottom: 1px solid $border-details;
+        }
+
+        p {
+            margin-bottom: 0;
+            font-size: 13px;
+            color: $text-comic;
+            font-weight: 500;
+            line-height: 1rem;
+
+            span {
+                color: $text-secondary-comic;
+
+                &.text_dark {
+                    color: $text-comic;
+                }
+            }
+        }
+    }
+}
+
+.slider_details {
+    background-color: $bg-details;
+    border-top: 1px solid $border-details;
+
+    .col:last-child .card_slider {
+        border-right: 1px solid $border-details;
+    }
+
+    .card_slider {
+        padding: 1rem;
+        display: flex;
+        justify-content: space-between;
+        text-transform: uppercase;
+        border-left: 1px solid $border-details;
+
+        h6 {
+            color: $text-slider;
+            font-size: 12px;
         }
     }
 }
